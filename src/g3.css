@@ -1,0 +1,53 @@
+/* G3 · Ganancias, descuentos, ARCA, estudio y portal. Solo tokens --nm-* (ver nominal.css). */
+.g3-tabs-wrap { margin-bottom: 16px; overflow-x: auto; }
+.g3-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.g3-form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.g3-inline { display: flex; gap: 8px; align-items: flex-end; flex-wrap: wrap; }
+.g3-inline .form-group { margin: 0; min-width: 150px; }
+.g3-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.g3-neg { color: var(--nm-red-text); font-weight: 700; }
+.g3-pos { color: var(--nm-green-text); font-weight: 700; }
+.g3-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.g3-steps li { display: flex; justify-content: space-between; gap: 12px; padding: 7px 10px; border-radius: 10px; background: var(--nm-surface-2); color: var(--nm-ink); font-size: 13px; }
+.g3-steps li.is-total { background: var(--nm-brand-soft); font-weight: 800; }
+.g3-steps li span:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.g3-diff-row td { background: var(--nm-red-soft); color: var(--nm-red-text); }
+.g3-diff-row td strong { color: var(--nm-red-text); }
+.g3-company { display: grid; gap: 10px; }
+.g3-company h3 { margin: 0; font-size: 16px; color: var(--nm-ink); }
+.g3-company ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.g3-company li { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; color: var(--nm-ink); }
+.g3-tone { flex: none; width: 10px; height: 10px; border-radius: 50%; margin-top: 4px; background: var(--nm-brand-c); }
+.g3-tone.is-warn { background: var(--nm-accent); }
+.g3-tone.is-alert { background: var(--nm-red-c); }
+.g3-secret { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 20px; letter-spacing: .06em; padding: 12px 14px; border-radius: 12px; background: var(--nm-surface-2); color: var(--nm-ink); user-select: all; word-break: break-all; }
+.g3-small-input { max-width: 130px; }
+/* Portal del empleado (siempre claro, pensado para el celular) */
+.g3-portal-tabs { display: flex; gap: 6px; overflow-x: auto; margin: 0 0 14px; padding-bottom: 4px; }
+.g3-portal-tabs button { flex: none; min-height: 44px; padding: 0 16px; border-radius: 12px; border: 1.5px solid #d6d2df; background: #ffffff; color: #292144; font: inherit; font-weight: 700; cursor: pointer; }
+.g3-portal-tabs button.is-on { background: #33206b; border-color: #33206b; color: #ffffff; }
+.g3-slip { display: grid; gap: 4px; padding: 14px; border: 1px solid #e2e0e8; border-radius: 14px; background: #ffffff; margin-bottom: 10px; text-align: left; width: 100%; font: inherit; color: #1d182c; cursor: pointer; }
+.g3-slip:hover { border-color: #33206b; }
+.g3-slip small { color: #585267; }
+.g3-frame { width: 100%; min-height: 70vh; border: 1px solid #e2e0e8; border-radius: 12px; background: #ffffff; }
+.g3-badge { display: inline-block; padding: 3px 10px; border-radius: 99px; font-size: 12px; font-weight: 800; }
+.g3-badge.ok { background: #e3f2e7; color: #1d6b3f; }
+.g3-badge.warn { background: #fdefd9; color: #8a4b06; }
+.g3-badge.bad { background: #f9e3e1; color: #a3302a; }
+.g3-badge.gray { background: #ebe9ef; color: #504c5c; }
+.g3-verify { text-align: center; }
+.g3-verify .g3-big { display: block; font-size: 22px; font-weight: 800; margin: 8px 0; color: #1d182c; }
+.g3-verify dl { text-align: left; display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; margin: 14px 0 0; color: #1d182c; }
+.g3-verify dt { color: #585267; font-weight: 700; }
+.g3-verify dd { margin: 0; }
+@media (max-width: 700px) { .g3-form-grid { grid-template-columns: 1fr; } .g3-inline .form-group { min-width: 100%; } }
+/* Multiempresa */
+.g3-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.g3-card { display: grid; gap: 8px; padding: 14px; border: 1px solid var(--nm-line); border-radius: 14px; background: var(--nm-surface); color: var(--nm-ink); min-width: 0; }
+.g3-card header { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+.g3-card header small { display: block; color: var(--nm-muted); }
+.g3-card p { margin: 0; }
+.g3-alerts { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: 13px; }
+.g3-alerts li { padding-left: 12px; border-left: 3px solid var(--nm-accent); color: var(--nm-ink); }
+.g3-alerts li.is-alert { border-left-color: var(--nm-red-c); }
+.g3-check { display: flex; gap: 8px; align-items: center; color: var(--nm-ink); }

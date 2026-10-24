@@ -1,0 +1,40 @@
+/* Nominal · G2 (liquidaciones, recibos, SAC y vacaciones, liquidación final). Usa los tokens --nm-* de nominal.css. */
+.nm2-num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.nm2-sub { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 14px; }
+.nm2-back { border: 0; background: none; color: var(--nm-brand-text); font: inherit; font-weight: 700; cursor: pointer; padding: 0; margin-bottom: 8px; }
+.nm2-input, .nm2-select, .nm2-text { padding: 9px 12px; border: 1px solid var(--nm-line); border-radius: 10px; background: var(--nm-surface); color: var(--nm-ink); font: inherit; font-size: 13px; min-width: 0; }
+.nm2-input.num { text-align: right; max-width: 150px; }
+.nm2-text { width: 100%; resize: vertical; min-height: 64px; }
+.nm2-label { display: grid; gap: 4px; font-size: 12px; font-weight: 700; color: var(--nm-muted); }
+.nm2-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-bottom: 12px; }
+.nm2-btn { padding: 9px 16px; border-radius: 12px; border: 1px solid var(--nm-line); background: var(--nm-surface); color: var(--nm-ink); font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.nm2-btn:hover:not(:disabled) { border-color: var(--nm-brand-text); }
+.nm2-btn:disabled { opacity: .6; cursor: not-allowed; }
+.nm2-btn.is-primary { background: var(--nm-brand); color: #fff; border-color: transparent; }
+.nm2-btn.is-primary:hover:not(:disabled) { background: var(--nm-brand-dark); }
+.nm2-btn.is-danger { background: var(--nm-red-soft); color: var(--nm-red-text); }
+.nm2-btn.is-small { padding: 5px 10px; font-size: 12px; border-radius: 9px; }
+.nm2-explain { background: var(--nm-surface-2); }
+.nm2-explain td { font-size: 12.5px; color: var(--nm-muted); }
+.nm2-explain strong { color: var(--nm-ink); }
+.nm2-disclaimer { padding: 12px 14px; border-radius: 12px; background: var(--nm-orange-soft); color: var(--nm-orange-text); font-size: 13px; font-weight: 600; margin: 0 0 14px; }
+.nm2-pie { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 18px; align-items: center; }
+.nm2-pie svg { width: 180px; height: 180px; }
+.nm2-legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: 12.5px; color: var(--nm-ink); }
+.nm2-legend li { display: grid; grid-template-columns: 14px minmax(0, 1fr) auto; gap: 8px; align-items: center; }
+.nm2-legend i { width: 14px; height: 14px; border-radius: 4px; display: block; }
+@media (max-width: 640px) { .nm2-pie { grid-template-columns: minmax(0, 1fr); justify-items: center; } }
+.nm2-steps { display: flex; gap: 6px; margin-bottom: 18px; flex-wrap: wrap; }
+.nm2-step { padding: 7px 14px; border-radius: 99px; background: var(--nm-surface-2); color: var(--nm-muted); font-size: 13px; font-weight: 700; border: 1px solid var(--nm-line); }
+.nm2-step.is-on { background: var(--nm-brand); color: #fff; border-color: transparent; }
+.nm2-step.is-done { background: var(--nm-green-soft); color: var(--nm-green-text); }
+.nm2-total { display: flex; justify-content: space-between; align-items: baseline; padding: 14px 16px; border-radius: 14px; background: var(--nm-brand-soft); color: var(--nm-ink); margin-top: 12px; }
+.nm2-total strong { font-size: 22px; font-variant-numeric: tabular-nums; }
+.nm2-grid-meses { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+.nm2-mes { border: 1px solid var(--nm-line); border-radius: 14px; padding: 12px; background: var(--nm-surface); color: var(--nm-ink); }
+.nm2-mes h3 { margin: 0 0 6px; font-size: 13px; text-transform: capitalize; }
+.nm2-mes p { margin: 0 0 4px; font-size: 12.5px; }
+.nm2-doc { white-space: pre-wrap; line-height: 1.55; font-size: 14px; background: var(--nm-surface-2); border: 1px dashed var(--nm-line); padding: 16px; border-radius: 12px; color: var(--nm-ink); }
+.nm2-kv { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; font-size: 13px; }
+.nm2-kv dt { color: var(--nm-muted); } .nm2-kv dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; color: var(--nm-ink); }
+.nm2-frame { width: 100%; height: 70vh; border: 1px solid var(--nm-line); border-radius: 12px; background: #fff; }
